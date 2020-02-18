@@ -2,5 +2,6 @@
 <ul>
   <li><%= @task.title %></li>
   <li>Details : <%= @task.details %></li>
-  <li><%= link_to "go back index", tasks_path%></li>
+  <li>Status : <%= @task.completed %></li>
+  <li><%= link_to "Go back to the list of tasks", tasks_path%></li>
 </ul>
