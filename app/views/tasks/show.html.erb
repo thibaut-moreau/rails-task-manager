@@ -4,4 +4,5 @@
   <li>Details : <%= @task.details %></li>
   <li>Status : <%= @task.completed %></li>
   <li><%= link_to "Go back to the list of tasks", tasks_path%></li>
+  <li><%= link_to "Delete Task", tasks_path(task), method: :delete %></li>
 </ul>
